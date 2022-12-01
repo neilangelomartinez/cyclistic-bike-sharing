@@ -1,6 +1,3 @@
-# cyclistic_bike_sharing
-Google Data Analytics Capstone Project
-
 <html xmlns:v="urn:schemas-microsoft-com:vml"
 xmlns:o="urn:schemas-microsoft-com:office:office"
 xmlns:w="urn:schemas-microsoft-com:office:word"
@@ -961,7 +958,7 @@ casual riders use Cyclistic bikes differently?<o:p></o:p></span></b></p>
 font-family:"Arial",sans-serif'>PREPARE<o:p></o:p></span></b></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Arial",sans-serif'>I will use Cyclisticï¿½s trip data for the past 12 months
+"Arial",sans-serif'>I will use Cyclistic’s trip data for the past 12 months
 (November 2021 to October 2022) to analyze and identify trends. Datasets are
 available in this </span><a
 href="https://divvy-tripdata.s3.amazonaws.com/index.html"><span
@@ -983,7 +980,7 @@ style='font-size:12.0pt;line-height:107%;font-family:"Arial",sans-serif'>.<o:p><
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
 "Arial",sans-serif'>Original - Lyft Bikes and Scooters, LLC, operates the City
-of Chicagoï¿½s, subject to the terms and conditions of the Data License
+of Chicago’s, subject to the terms and conditions of the Data License
 Agreement.<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
@@ -994,7 +991,7 @@ month.<o:p></o:p></span></p>
 "Arial",sans-serif'>Current - This data is being updated monthly.<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Arial",sans-serif'>Cited ï¿½ It is a public data and the datasets are available in
+"Arial",sans-serif'>Cited – It is a public data and the datasets are available in
 this </span><a href="https://divvy-tripdata.s3.amazonaws.com/index.html"><span
 style='font-size:12.0pt;line-height:107%;font-family:"Arial",sans-serif'>link</span></a><span
 style='font-size:12.0pt;line-height:107%;font-family:"Arial",sans-serif'>.<o:p></o:p></span></p>
@@ -1017,7 +1014,7 @@ line-height:107%;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
 <p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
 line-height:107%;font-family:"Arial",sans-serif'>To import the CSV files in
 pgAdmin4, first you need to create tables and then import the twelve CSV files
-one by one. Hereï¿½s the code in creating tables, 12 of these should be written,
+one by one. Here’s the code in creating tables, 12 of these should be written,
 you just need to change the table name after the CREATE TABLE function. As I
 have checked, all files have the same column name, therefore we can proceed in
 creating tables and merging them later on.<o:p></o:p></span></p>
@@ -1026,55 +1023,55 @@ creating tables and merging them later on.<o:p></o:p></span></p>
 font-family:"Courier New"'>CREATE TABLE nov21 (<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ </span>ride_id
+font-family:"Courier New"'><span style='mso-tab-count:1'>     </span>ride_id
 varchar,<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ </span>rideable_type
+font-family:"Courier New"'><span style='mso-tab-count:1'>     </span>rideable_type
 varchar,<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ </span>started_at
+font-family:"Courier New"'><span style='mso-tab-count:1'>     </span>started_at
 timestamp,<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ </span>ended_at
+font-family:"Courier New"'><span style='mso-tab-count:1'>     </span>ended_at
 timestamp,<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ </span>start_station_name
+font-family:"Courier New"'><span style='mso-tab-count:1'>     </span>start_station_name
 varchar,<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ </span>start_station_id
+font-family:"Courier New"'><span style='mso-tab-count:1'>     </span>start_station_id
 varchar,<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ </span>end_station_name
+font-family:"Courier New"'><span style='mso-tab-count:1'>     </span>end_station_name
 varchar,<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ </span>end_station_id
+font-family:"Courier New"'><span style='mso-tab-count:1'>     </span>end_station_id
 varchar,<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ </span>start_lat
+font-family:"Courier New"'><span style='mso-tab-count:1'>     </span>start_lat
 numeric,<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ </span>start_lng
+font-family:"Courier New"'><span style='mso-tab-count:1'>     </span>start_lng
 numeric,<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ </span>end_lat
+font-family:"Courier New"'><span style='mso-tab-count:1'>     </span>end_lat
 numeric,<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ </span>end_lng
+font-family:"Courier New"'><span style='mso-tab-count:1'>     </span>end_lng
 numeric,<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ </span>member_casual
+font-family:"Courier New"'><span style='mso-tab-count:1'>     </span>member_casual
 varchar<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
@@ -1196,40 +1193,40 @@ font-family:"Courier New"'>AS<o:p></o:p></span></p>
 font-family:"Courier New"'>SELECT ride_id<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>,rideable_type<o:p></o:p></span></p>
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>,rideable_type<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>,started_at<o:p></o:p></span></p>
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>,started_at<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>,ended_at<o:p></o:p></span></p>
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>,ended_at<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>,start_station_name<o:p></o:p></span></p>
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>,start_station_name<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>,start_station_id<o:p></o:p></span></p>
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>,start_station_id<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>,end_station_name<o:p></o:p></span></p>
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>,end_station_name<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>,end_station_id<o:p></o:p></span></p>
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>,end_station_id<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>,start_lat<o:p></o:p></span></p>
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>,start_lat<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>,start_lng<o:p></o:p></span></p>
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>,start_lng<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>,end_lat<o:p></o:p></span></p>
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>,end_lat<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>,end_lng<o:p></o:p></span></p>
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>,end_lng<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>,member_casual<o:p></o:p></span></p>
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>,member_casual<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
 font-family:"Courier New"'>FROM nov21<o:p></o:p></span></p>
@@ -1238,7 +1235,7 @@ font-family:"Courier New"'>FROM nov21<o:p></o:p></span></p>
 font-family:"Courier New"'>UNION<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-size:10.0pt;line-height:107%;font-family:
-"Courier New"'>SELECT <i>ï¿½ (and so on)<o:p></o:p></i></span></p>
+"Courier New"'>SELECT <i>… (and so on)<o:p></o:p></i></span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
 "Arial",sans-serif;mso-no-proof:yes'>Running the code may take some time
@@ -1344,7 +1341,7 @@ classic bike, while <b>147,435</b> are using the docked bike and <b>1,487,771</b
 are using the electric bike.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
-font-family:"Arial",sans-serif'>Next, letï¿½s determine how many are casual
+font-family:"Arial",sans-serif'>Next, let’s determine how many are casual
 riders and how many members does Cyclistic have.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
@@ -1384,18 +1381,18 @@ font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
 font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
-font-family:"Arial",sans-serif'>Letï¿½s determine how many casual riders and
+font-family:"Arial",sans-serif'>Let’s determine how many casual riders and
 members use different types of bikes.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
 font-family:"Courier New"'>SELECT rideable_type<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>,
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>,
 COUNT(rideable_type) AS number_of_rides<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>,
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>,
 member_casual<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
@@ -1418,14 +1415,14 @@ style='font-size:10.0pt;font-family:"Courier New"'><o:p></o:p></span></p>
 font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
-font-family:"Arial",sans-serif'>Letï¿½s get the average trip duration of members
+font-family:"Arial",sans-serif'>Let’s get the average trip duration of members
 and casual riders.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
 font-family:"Courier New"'>SELECT member_casual<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>,
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>,
 AVG(trip_duration)::time(0) AS average_trip<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
@@ -1455,7 +1452,7 @@ font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
 font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
-font-family:"Arial",sans-serif'>Letï¿½s also get the overall average trip
+font-family:"Arial",sans-serif'>Let’s also get the overall average trip
 duration.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
@@ -1483,14 +1480,14 @@ font-family:"Arial",sans-serif'>The average trip of all users is <b>16 minutes
 font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
-font-family:"Arial",sans-serif'>Letï¿½s get the average trip durations per month<o:p></o:p></span></p>
+font-family:"Arial",sans-serif'>Let’s get the average trip durations per month<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
 font-family:"Courier New"'>SELECT CONCAT(start_month, ' ',start_year) AS
 month_year<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>,AVG(trip_duration)::time(0)
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>,AVG(trip_duration)::time(0)
 AS average_per_month<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
@@ -1527,11 +1524,11 @@ font-family:"Courier New"'>SELECT CONCAT(start_month, ' ',start_year) AS
 month_year<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>,AVG(trip_duration)::time(0)
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>,AVG(trip_duration)::time(0)
 AS average_per_month<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>,
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>,
 member_casual<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
@@ -1555,14 +1552,14 @@ style='font-size:10.0pt;font-family:"Courier New"'><o:p></o:p></span></p>
 font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
-font-family:"Arial",sans-serif'>Letï¿½s get the total number of rides per month.<o:p></o:p></span></p>
+font-family:"Arial",sans-serif'>Let’s get the total number of rides per month.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
 font-family:"Courier New"'>SELECT CONCAT(start_month, ' ',start_year) AS
 month_year<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>,COUNT(trip_duration)
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>,COUNT(trip_duration)
 AS count_per_month<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
@@ -1624,7 +1621,7 @@ font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
 font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
-font-family:"Arial",sans-serif'>Letï¿½s get the total number of rides per month
+font-family:"Arial",sans-serif'>Let’s get the total number of rides per month
 with types of riders.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
@@ -1632,11 +1629,11 @@ font-family:"Courier New"'>SELECT CONCAT(start_month, ' ',start_year) AS
 month_year<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>,COUNT(*)
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>,COUNT(*)
 AS count_per_month<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>,
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>,
 member_casual<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
@@ -1663,13 +1660,13 @@ font-family:"Courier New"'><o:p></o:p></span></p>
 font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
-font-family:"Arial",sans-serif'>Letï¿½s get the average trip duration per day.<o:p></o:p></span></p>
+font-family:"Arial",sans-serif'>Let’s get the average trip duration per day.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
 font-family:"Courier New"'>SELECT start_day2 AS day_of_month<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>,AVG(trip_duration)::time(0)
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>,AVG(trip_duration)::time(0)
 AS average_trip<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
@@ -1695,13 +1692,13 @@ style='font-size:10.0pt;font-family:"Courier New"'><o:p></o:p></span></p>
 font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
-font-family:"Arial",sans-serif'>Letï¿½s get the total number of rides per day<o:p></o:p></span></p>
+font-family:"Arial",sans-serif'>Let’s get the total number of rides per day<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
 font-family:"Courier New"'>SELECT start_day2 AS day_of_month<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>,COUNT(trip_duration)
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>,COUNT(trip_duration)
 AS total_trip<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
@@ -1730,14 +1727,14 @@ font-family:"Arial",sans-serif'>Total trip per day of members.<o:p></o:p></span>
 font-family:"Courier New"'>SELECT start_day2 AS day_of_week<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>,COUNT(trip_duration)
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>,COUNT(trip_duration)
 AS total_trip<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
 font-family:"Courier New"'>FROM cyclistic_cleaned<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'>WHERE member_casual = ï¿½memberï¿½<o:p></o:p></span></p>
+font-family:"Courier New"'>WHERE member_casual = ‘member’<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
 font-family:"Courier New"'>GROUP BY start_day2<o:p></o:p></span></p>
@@ -1762,7 +1759,7 @@ font-family:"Arial",sans-serif'>Average trip per day of members<o:p></o:p></span
 font-family:"Courier New"'>SELECT start_day2 AS day_of_week<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>,AVG(trip_duration)::time(0)
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>,AVG(trip_duration)::time(0)
 AS total_trip<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
@@ -1794,7 +1791,7 @@ font-family:"Arial",sans-serif'>Total trip per day of casual riders.<o:p></o:p><
 font-family:"Courier New"'>SELECT start_day2 AS day_of_month<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>,COUNT(trip_duration)
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>,COUNT(trip_duration)
 AS total_trip<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
@@ -1826,7 +1823,7 @@ font-family:"Arial",sans-serif'>Average trip per day of casual riders<o:p></o:p>
 font-family:"Courier New"'>SELECT start_day2 AS day_of_week<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>,AVG(trip_duration)::time(0)
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>,AVG(trip_duration)::time(0)
 AS total_trip<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
@@ -1855,7 +1852,7 @@ style='font-size:10.0pt;font-family:"Courier New"'><o:p></o:p></span></p>
 font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
-font-family:"Arial",sans-serif'>Letï¿½s see how many riders per time of the day</span><span
+font-family:"Arial",sans-serif'>Let’s see how many riders per time of the day</span><span
 style='font-size:10.0pt;font-family:"Courier New"'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
@@ -1863,19 +1860,19 @@ font-family:"Courier New"'>SELECT start_day2 AS day_of_month, COUNT(start_day)
 AS total_trip, (CASE<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>WHEN
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>WHEN
 start_time &gt;= '06:00:00' AND start_time &lt; '12:00:00' THEN 'Morning'<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>WHEN
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>WHEN
 start_time &gt;= '12:00:00' AND start_time &lt; '17:00:00' THEN 'Afternoon'<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>WHEN
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>WHEN
 start_time &gt;= '17:00:00' AND start_time &lt; '20:00:00' THEN 'Evening'<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>ELSE
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>ELSE
 'Night'<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
@@ -1888,19 +1885,19 @@ font-family:"Courier New"'>FROM cyclistic_cleaned<o:p></o:p></span></p>
 font-family:"Courier New"'>GROUP BY start_day2, (CASE<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>WHEN
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>WHEN
 start_time &gt;= '06:00:00' AND start_time &lt; '12:00:00' THEN 'Morning'<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>WHEN
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>WHEN
 start_time &gt;= '12:00:00' AND start_time &lt; '17:00:00' THEN 'Afternoon'<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>WHEN
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>WHEN
 start_time &gt;= '17:00:00' AND start_time &lt; '20:00:00' THEN 'Evening'<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>ELSE
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>ELSE
 'Night'<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
@@ -1933,7 +1930,7 @@ the highest number of trips.<o:p></o:p></span></p>
 font-family:"Courier New"'>SELECT start_station_name AS station<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>,
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>,
 COUNT(start_station_name) AS total_trips<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
@@ -1969,12 +1966,12 @@ and casual riders by bike type.<o:p></o:p></span></p>
 font-family:"Courier New"'>SELECT rideable_type<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span><span
-style='mso-spacerun:yes'>ï¿½</span>, member_casual<o:p></o:p></span></p>
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span><span
+style='mso-spacerun:yes'> </span>, member_casual<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span><span
-style='mso-spacerun:yes'>ï¿½</span>, MAX(trip_duration) AS longest_ride<o:p></o:p></span></p>
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span><span
+style='mso-spacerun:yes'> </span>, MAX(trip_duration) AS longest_ride<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
 font-family:"Courier New"'>FROM cyclistic_cleaned<o:p></o:p></span></p>
@@ -2015,22 +2012,22 @@ font-family:"Courier New"'>CREATE TABLE location AS<o:p></o:p></span></p>
 font-family:"Courier New"'>SELECT rideable_type<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>,
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>,
 member_casual<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>,
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>,
 start_lat<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>,
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>,
 start_lng<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>, end_lat<o:p></o:p></span></p>
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>, end_lat<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
-font-family:"Courier New"'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span>, end_lng<o:p></o:p></span></p>
+font-family:"Courier New"'><span style='mso-tab-count:1'>      </span>, end_lng<o:p></o:p></span></p>
 
 <p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt;
 font-family:"Courier New"'>FROM cyclistic_cleaned<o:p></o:p></span></p>
